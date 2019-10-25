@@ -1,0 +1,1423 @@
+<!-- 
+!!!!!!!!!!!! TO JEST WAŻNE !!!!!!!!!!!!!!!!
+
+czytaj komentarzy, oni bedą pomogały cię zrozumieć kod i trochy ułatwia przepisywanie kodu 
+
+tu jest trochy kodu do jc, ale on jest nie obowiązkowy, jeżeli nie potrafisz to przepisać, to po prostu wydalaj to
+
+!!!!!!!!!!!!!!!!!!!!!!! na 366 linijce wpisz adresu do swego documenta na miejscu"#"" !!!!!!!!!!!!!!!!!!!!!!!!
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <!-- ta komanda podłancza biblioteke stylów css -->
+	</head>
+	<div id="wynik">
+				<!--
+				!!!!!!!!! TO JEST WAŻNE !!!!!!!!!!!!!!!
+
+				wiem że tu było by lepiej to wszystko napisać w jednym clasie, ale jeżely bedą dwa klasy w jednym tegu, to animacja nie bedę działawa
+				-->
+				<div class="slideRight" id="wynik_block_1"></div>
+				<div class="slideRight" id="wynik_block_2"></div>
+				<div class="slideRight" id="wynik_block_3"></div>
+				<div class="slideRight" id="wynik_block_4"></div>
+				<div class="slideRight" id="wynik_block_5" ></div>
+				<div class="slideRight" id="wynik_block_6" ></div>
+				<div class="slideRight" id="wynik_block_7" ></div>
+				<div class="slideRight" id="wynik_block_8" ></div>
+				<div class="slideRight" id="wynik_block_9" ></div>
+				<div class="slideRight" id="wynik_block_10" ></div>
+				<div class="slideRight" id="wynik_block_11" ></div>
+				<div class="slideRight" id="wynik_block_12" ></div>
+				<div class="slideRight" id="wynik_block_13" ></div>
+				<div class="slideRight" id="wynik_block_14" ></div>
+				<div class="slideRight" id="wynik_block_15" ></div>
+			</div>
+	<body>
+		<div id="big_block">
+			<div id="block_for_test">
+				<div id="question_1" class="fadeIn" align="center">
+					<h3 class="pytanie">Czego najwięcej używasz?</h3>	
+				</div>
+				<div id="question_2" class="fadeIn" align="center">
+					<h3 class="pytanie">U ciebie w plecaku leży kanapka w woreczku już przez dwa tygodnie. Jak się jej pozbędzisz?</h3>	
+				</div>
+				<div id="question_3" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często nie wyłączasz urzadzeń elektrycznych?</h3>	
+				</div>
+				<div id="question_4" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często zapominasz wyłaczać światła kiedy wychodzisz z domu?</h3>	
+				</div>
+				<div id="question_5" class="fadeIn" align="center">
+					<h3 class="pytanie">Gdzie wyrzucisz baterię?</h3>	
+				</div>
+				<div id="question_6" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często bierzesz woreczki/reklamówki jednorazowe w sklepach?</h3>	
+				</div>
+				<div id="question_7" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często zdajesz mukulaturę?</h3>	
+				</div>
+				<div id="question_8" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często zostawiasz porządek po pikniku?</h3>	
+				</div>
+				<div id="question_9" class="fadeIn" align="center">
+					<h3 class="pytanie">Czym ogrzewasz swój dom?</h3>	
+				</div>
+				<div id="question_10" class="fadeIn" align="center">
+					<h3 class="pytanie">Ile osób jesteśmy w stanie wykarmić?</h3>	
+				</div>
+				<div id="question_11" class="fadeIn" align="center">
+					<h3 class="pytanie">Ile jest głodujących osób na ziemi?</h3>	
+				</div>
+				<div id="question_12" class="fadeIn" align="center">
+					<h3 class="pytanie">Jak często zostawiesz śmieci poza smietnikiem?</h3>	
+				</div>
+				<div id="question_13" class="fadeIn" align="center">
+					<h3 class="pytanie">W jakim stopniu troszczysz się o środowisko?</h3>	
+				</div>
+				<div id="question_14" class="fadeIn" align="center">
+					<h3 class="pytanie">Skąt pijesz wode?</h3>	
+				</div>
+				<div id="question_15" class="fadeIn" align="center">
+					<h3 class="pytanie">Widzisz dwóch białych ludzi znęcający się nad czarnoskórym, co robisz?</h3>	
+				</div>
+				<div id=block_1 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_1_1" align="center">
+							<h4 class="odpowiedz_text">Samochód / skuter</h4>
+						</button>
+						<button class="odpowiedz" id="odp_1_2" align="center">
+							<h4 class="odpowiedz_text">Rower</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_1_3" align="center">
+							<h4 class="odpowiedz_text">Komunikacja miejska</h4>
+						</button>
+						<button class="odpowiedz" id="odp_1_4" align="center">
+							<h4 class="odpowiedz_text">Chodzenie pieszo</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_2 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_2_1" align="center">
+							<h4 class="odpowiedz_text">Worek do tworzyw sztucznych, kanapka do odpadów biologicznych</h4>
+						</button>
+						<button class="odpowiedz" id="odp_2_2" align="center">
+							<h4 class="odpowiedz_text">Worek do zmieszanych, kanapka do odpadów biologicznych</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_2_3" align="center">
+							<h4 class="odpowiedz_text">Wszystko do zmieszanych</h4>
+						</button>
+						<button class="odpowiedz" id="odp_2_4" align="center">
+							<h4 class="odpowiedz_text">Wszystko do odpadów biologicznych</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_3 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_3_1" align="center">
+							<h4 class="odpowiedz_text">Zawsze wyłączam</h4>
+						</button>
+						<button class="odpowiedz" id="odp_3_2" align="center">
+							<h4 class="odpowiedz_text">Od czasu do czasu</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_3_3" align="center">
+							<h4 class="odpowiedz_text">Bardzo rzadko</h4>
+						</button>
+						<button class="odpowiedz" id="odp_3_4" align="center">
+							<h4 class="odpowiedz_text">Nigdy nie wyłączam</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_4 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_4_1" align="center">
+							<h4 class="odpowiedz_text">Zawsze wyłączam</h4>
+						</button>
+						<button class="odpowiedz" id="odp_4_2" align="center">
+							<h4 class="odpowiedz_text">Od czasu do czasu</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_4_3" align="center">
+							<h4 class="odpowiedz_text">Bardzo rzadko</h4>
+						</button>
+						<button class="odpowiedz" id="odp_4_4" align="center">
+							<h4 class="odpowiedz_text">Nigdy nie wyłączam</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_5 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_5_1" align="center">
+							<h4 class="odpowiedz_text">Tworzywa sztuczne</h4>
+						</button>
+						<button class="odpowiedz" id="odp_5_2" align="center">
+							<h4 class="odpowiedz_text">Odpady biologicznie</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_5_3" align="center">
+							<h4 class="odpowiedz_text">Odpady zmieszane</h4>
+						</button>
+						<button class="odpowiedz" id="odp_5_4" align="center">
+							<h4 class="odpowiedz_text">Odpady specjalne</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_6 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_6_1" align="center">
+							<h4 class="odpowiedz_text">Zawsze</h4>
+						</button>
+						<button class="odpowiedz" id="odp_6_2" align="center">
+							<h4 class="odpowiedz_text">Często</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_6_3" align="center">
+							<h4 class="odpowiedz_text">Od czasu do czasu</h4>
+						</button>
+						<button class="odpowiedz" id="odp_6_4" align="center">
+							<h4 class="odpowiedz_text">Rzadko</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_7 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_7_1" align="center">
+							<h4 class="odpowiedz_text">Raz na mniej więcej pięc lat</h4>
+						</button>
+						<button class="odpowiedz" id="odp_7_2" align="center">
+							<h4 class="odpowiedz_text">Mniej więcej raz na rok</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_7_3" align="center">
+							<h4 class="odpowiedz_text">Mniej więcej co każdy mięsiać</h4>
+						</button>
+						<button class="odpowiedz" id="odp_7_4" align="center">
+							<h4 class="odpowiedz_text">Nigdy</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_8 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_8_1" align="center">
+							<h4 class="odpowiedz_text">Zawsze</h4>
+						</button>
+						<button class="odpowiedz" id="odp_8_2" align="center">
+							<h4 class="odpowiedz_text">Często</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_8_3" align="center">
+							<h4 class="odpowiedz_text">Od czasu do czasu</h4>
+						</button>
+						<button class="odpowiedz" id="odp_8_4" align="center">
+							<h4 class="odpowiedz_text">Rzadko</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_9 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_9_1" align="center">
+							<h4 class="odpowiedz_text">Piec węglowy</h4>
+						</button>
+						<button class="odpowiedz" id="odp_9_2" align="center">
+							<h4 class="odpowiedz_text">Gaz</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_9_3" align="center">
+							<h4 class="odpowiedz_text">Prąd</h4>
+						</button>
+						<button class="odpowiedz" id="odp_9_4" align="center">
+							<h4 class="odpowiedz_text">Ciepłownia miejska</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_10 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_10_1" align="center">
+							<h4 class="odpowiedz_text">5-6 mld</h4>
+						</button>
+						<button class="odpowiedz" id="odp_10_2" align="center">
+							<h4 class="odpowiedz_text">7-9 mld</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_10_3" align="center">
+							<h4 class="odpowiedz_text">10-14 mld</h4>
+						</button>
+						<button class="odpowiedz" id="odp_10_4" align="center">
+							<h4 class="odpowiedz_text">15-20 mld</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_11 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_11_1" align="center">
+							<h4 class="odpowiedz_text">mniej niż 200 tys</h4>
+						</button>
+						<button class="odpowiedz" id="odp_11_2" align="center">
+							<h4 class="odpowiedz_text">300-500 tys</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_11_3" align="center">
+							<h4 class="odpowiedz_text">600-800 tys</h4>
+						</button>
+						<button class="odpowiedz" id="odp_11_4" align="center">
+							<h4 class="odpowiedz_text">ponad 900 tys</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_12 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_12_1" align="center">
+							<h4 class="odpowiedz_text">Często</h4>
+						</button>
+						<button class="odpowiedz" id="odp_12_2" align="center">
+							<h4 class="odpowiedz_text">Od czasu do czasu</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_12_3" align="center">
+							<h4 class="odpowiedz_text">Bardzo rzadko</h4>
+						</button>
+						<button class="odpowiedz" id="odp_12_4" align="center">
+							<h4 class="odpowiedz_text">Nigdy</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_13 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_13_1" align="center">
+							<h4 class="odpowiedz_text">w dóżym</h4>
+						</button>
+						<button class="odpowiedz" id="odp_13_2" align="center">
+							<h4 class="odpowiedz_text">w średnim</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_13_3" align="center">
+							<h4 class="odpowiedz_text">w małym</h4>
+						</button>
+						<button class="odpowiedz" id="odp_13_4" align="center">
+							<h4 class="odpowiedz_text">w żadnym</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_14 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_14_1" align="center">
+							<h4 class="odpowiedz_text">z kranu</h4>
+						</button>
+						<button class="odpowiedz" id="odp_14_2" align="center">
+							<h4 class="odpowiedz_text">z plastikowych butelek</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_14_3" align="center">
+							<h4 class="odpowiedz_text">ze szklanych butelek</h4>
+						</button>
+						<button class="odpowiedz" id="odp_14_4" align="center">
+							<h4 class="odpowiedz_text">ze studni</h4>
+						</button>
+					</div>
+				</div>
+				<div id=block_15 class="fadeIn">
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_15_1" align="center">
+							<h4 class="odpowiedz_text">Staram się ich rozdzielić/uspokoić</h4>
+						</button>
+						<button class="odpowiedz" id="odp_15_2" align="center">
+							<h4 class="odpowiedz_text">dołączam się do bujki po stronie ofiary</h4>
+						</button>
+					</div>
+					<div class="block_do_odpowiedzie">
+						<button class="odpowiedz" id="odp_15_3" align="center">
+							<h4 class="odpowiedz_text">wzywam policję</h4>
+						</button>
+						<button class="odpowiedz" id="odp_15_4" align="center">
+							<h4 class="odpowiedz_text">Też znęcam się nad ofiarą</h4>
+						</button>
+					</div>
+				</div>
+				<button id="back"></button>
+				<button id="next"></button>
+			</div>
+			<div id="block_16" class="fadeIn" align="center">
+					<div id="wrapped"></div>
+			</div>
+			<div id="hopes" class="slideUp"></div>
+			<div id="ret">
+				<a href="https://ekoquiz.netlify.com/?fbclid=IwAR23vnRCsSOwRmxchzPEHFSF-okLZgHU-sgw9-TtBkoGC4l04DeYc9Qmsww"><img src="img/74617660_2453869798221973_2891375741763584000_n.png"></a>
+				<!-- Tu wpisz adres -->
+				<h2 align="center" id="ret_text">Powrót do strony głównej</h2>
+			</div>
+		</div>                                                
+	</body>
+	<script type="text/javascript">
+		var n = 0; // zmienna dla "but_next" i dla "but_back"
+		var t1 = 0; // zmienna dla "but_1_1"-->"but_1_4"
+		var t2 = 0; // zmienna dla "but_2_1"-->"but_2_4"
+		var t3 = 0; // zmienna dla "but_3_1"-->"but_3_4"
+		var t4 = 0; // zmienna dla "but_4_1"-->"but_4_4"
+		var t5 = 0; // zmienna dla "but_5_1"-->"but_5_4"
+		var t6 = 0;
+		var t7 = 0;
+		var t8 = 0;
+		var t9 = 0;
+		var t10 = 0;
+		var t11 = 0;
+		var t12 = 0;
+		var t13 = 0;
+		var t14 = 0;
+		var t15 = 0;
+		var w = 0; // wynik (t1+t2+t3+t4+t5)
+		var doc = document; // to jest zrobione dla optymizacji koda
+
+		let but_next = doc.getElementById('next');
+		let but_back = doc.getElementById('back');
+
+		// to jest block zmiennych dla pierwszego blocka odpowiedzej
+
+		let but_1_1 = doc.getElementById('odp_1_1');
+		let but_1_2 = doc.getElementById('odp_1_2');
+		let but_1_3 = doc.getElementById('odp_1_3');
+		let but_1_4 = doc.getElementById('odp_1_4');
+
+		// to jest block zmiennych dla drugiego blocka opdpowiedzej
+
+		let but_2_1 = doc.getElementById('odp_2_1');
+		let but_2_2 = doc.getElementById('odp_2_2');
+		let but_2_3 = doc.getElementById('odp_2_3');
+		let but_2_4 = doc.getElementById('odp_2_4');
+
+		// to jest block zmiennych dla trzeczego blocka odpowiedziej
+
+		let but_3_1 = doc.getElementById('odp_3_1');
+		let but_3_2 = doc.getElementById('odp_3_2');
+		let but_3_3 = doc.getElementById('odp_3_3');	
+		let but_3_4 = doc.getElementById('odp_3_4');
+
+		// to jest block zmiennych dla czwartego blocka odpowiedziej
+
+		let but_4_1 = doc.getElementById('odp_4_1');
+		let but_4_2 = doc.getElementById('odp_4_2');
+		let but_4_3 = doc.getElementById('odp_4_3');
+		let but_4_4 = doc.getElementById('odp_4_4');
+
+		// to jest block zmiennych dla piatęgo blocka odpowiedziej
+
+		let but_5_1 = doc.getElementById('odp_5_1');
+		let but_5_2 = doc.getElementById('odp_5_2');
+		let but_5_3 = doc.getElementById('odp_5_3');
+		let but_5_4 = doc.getElementById('odp_5_4');
+
+		let but_6_1 = doc.getElementById('odp_6_1');
+		let but_6_2 = doc.getElementById('odp_6_2');
+		let but_6_3 = doc.getElementById('odp_6_3');
+		let but_6_4 = doc.getElementById('odp_6_4');
+
+		let but_7_1 = doc.getElementById('odp_7_1');
+		let but_7_2 = doc.getElementById('odp_7_2');
+		let but_7_3 = doc.getElementById('odp_7_3');
+		let but_7_4 = doc.getElementById('odp_7_4');
+
+		let but_8_1 = doc.getElementById('odp_8_1');
+		let but_8_2 = doc.getElementById('odp_8_2');
+		let but_8_3 = doc.getElementById('odp_8_3');
+		let but_8_4 = doc.getElementById('odp_8_4');
+
+		let but_9_1 = doc.getElementById('odp_9_1');
+		let but_9_2 = doc.getElementById('odp_9_2');
+		let but_9_3 = doc.getElementById('odp_9_3');
+		let but_9_4 = doc.getElementById('odp_9_4');
+
+		let but_10_1 = doc.getElementById('odp_10_1');
+		let but_10_2 = doc.getElementById('odp_10_2');
+		let but_10_3 = doc.getElementById('odp_10_3');
+		let but_10_4 = doc.getElementById('odp_10_4');
+
+		let but_11_1 = doc.getElementById('odp_11_1');
+		let but_11_2 = doc.getElementById('odp_11_2');
+		let but_11_3 = doc.getElementById('odp_11_3');
+		let but_11_4 = doc.getElementById('odp_11_4');
+
+		let but_12_1 = doc.getElementById('odp_12_1');
+		let but_12_2 = doc.getElementById('odp_12_2');
+		let but_12_3 = doc.getElementById('odp_12_3');
+		let but_12_4 = doc.getElementById('odp_12_4');
+
+		let but_13_1 = doc.getElementById('odp_13_1');
+		let but_13_2 = doc.getElementById('odp_13_2');
+		let but_13_3 = doc.getElementById('odp_13_3');
+		let but_13_4 = doc.getElementById('odp_13_4');
+
+		let but_14_1 = doc.getElementById('odp_14_1');
+		let but_14_2 = doc.getElementById('odp_14_2');
+		let but_14_3 = doc.getElementById('odp_14_3');
+		let but_14_4 = doc.getElementById('odp_14_4');
+
+		let but_15_1 = doc.getElementById('odp_15_1');
+		let but_15_2 = doc.getElementById('odp_15_2');
+		let but_15_3 = doc.getElementById('odp_15_3');
+		let but_15_4 = doc.getElementById('odp_15_4');
+
+		// to jest block zmienncyh dla blocków u wierchnim blocku
+
+		// to jest zmienna dla blocka z wynikiem
+
+		let end = doc.getElementById('block_16');
+
+		// to jest zmienna dla głównego blocka
+
+		let boss = doc.getElementById('block_for_test');
+
+		but_next.onclick = function()
+		{
+			if(n < 0)
+			{
+				n = 0;
+			}
+			n++;
+			if (n==1)
+			{
+				question_1.style.display ="none";
+				question_2.style.display ="block";
+				block_1.style.display ="none";
+				block_2.style.display ="block";
+				wynik_block_1.style.display ="block";
+			}
+			if (n==2)
+			{
+				question_2.style.display ="none";
+				question_3.style.display ="block";
+				block_2.style.display ="none";
+				block_3.style.display ="block";
+				wynik_block_2.style.display ="block";
+			}
+			if (n==3)
+			{
+				question_3.style.display ="none";
+				question_4.style.display ="block";
+				block_3.style.display ="none";
+				block_4.style.display ="block";
+				wynik_block_3.style.display ="block";
+			}
+			if (n==4)
+			{
+				question_4.style.display ="none";
+				question_5.style.display ="block";
+				block_4.style.display ="none";
+				block_5.style.display ="block";
+				wynik_block_4.style.display ="block";
+			}
+			if (n==5)
+			{
+				question_5.style.display ="none";
+				question_6.style.display ="block";
+				block_5.style.display ="none";
+				block_6.style.display ="block";
+				wynik_block_5.style.display ="block";
+			}
+			if (n==6)
+			{
+				question_6.style.display ="none";
+				question_7.style.display ="block";
+				block_6.style.display ="none";
+				block_7.style.display ="block";
+				wynik_block_6.style.display ="block";
+			}
+			if (n==7)
+			{
+				question_7.style.display ="none";
+				question_8.style.display ="block";
+				block_7.style.display ="none";
+				block_8.style.display ="block";
+				wynik_block_7.style.display ="block";
+			}
+			if (n==8)
+			{
+				question_8.style.display ="none";
+				question_9.style.display ="block";
+				block_8.style.display ="none";
+				block_9.style.display ="block";
+				wynik_block_8.style.display ="block";
+			}
+			if (n==9)
+			{
+				question_9.style.display ="none";
+				question_10.style.display ="block";
+				block_9.style.display ="none";
+				block_10.style.display ="block";
+				wynik_block_9.style.display ="block";
+			}
+			if (n==10)
+			{
+				question_10.style.display ="none";
+				question_11.style.display ="block";
+				block_10.style.display ="none";
+				block_11.style.display ="block";
+				wynik_block_10.style.display ="block";
+			}
+			if (n==11)
+			{
+				question_11.style.display ="none";
+				question_12.style.display ="block";
+				block_11.style.display ="none";
+				block_12.style.display ="block";
+				wynik_block_11.style.display ="block";
+			}
+			if (n==12)
+			{
+				question_12.style.display ="none";
+				question_13.style.display ="block";
+				block_12.style.display ="none";
+				block_13.style.display ="block";
+				wynik_block_12.style.display ="block";
+			}
+			if (n==13)
+			{
+				question_13.style.display ="none";
+				question_14.style.display ="block";
+				block_13.style.display ="none";
+				block_14.style.display ="block";
+				wynik_block_13.style.display ="block";
+			}
+			if (n==14)
+			{
+				question_14.style.display ="none";
+				question_15.style.display ="block";
+				block_14.style.display ="none";
+				block_15.style.display ="block";
+				wynik_block_14.style.display ="block";
+			}
+			if (n==15)
+			{
+
+				// komanda prowadzi kierownika do góry strony
+				boss.style.display ="none";
+				wynik_block_15.style.display ="block";
+				block_16.style.display ="block";
+				ret.style.display ="block";
+				hopes.style.display ="block";
+				 if(t1 < 1)
+				 {
+				 	wynik_block_1.style.backgroundColor ="red";
+				 }
+				 if(t1 >= 1 && t1 < 4)
+				 {
+				 	wynik_block_1.style.backgroundColor ="yellow";
+				 }
+				 if(t1 >= 4)
+				 {
+				 	wynik_block_1.style.backgroundColor ="green";
+				 }
+				 if(t2 < 1)
+				 {
+				 	wynik_block_2.style.backgroundColor ="red";
+				 }
+				 if(t2 >= 1 && t2 < 4)
+				 {
+				 	wynik_block_2.style.backgroundColor ="yellow";
+				 }
+				 if(t2 >= 4)
+				 {
+				 	wynik_block_2.style.backgroundColor ="green";
+				 }
+				 if(t3 < 1)
+				 {
+				 	wynik_block_3.style.backgroundColor ="red";
+				 }
+				 if(t3 >= 1 && t3 < 4)
+				 {
+				 	wynik_block_3.style.backgroundColor ="yellow";
+				 }
+				 if(t3 >= 4)
+				 {
+				 	wynik_block_3.style.backgroundColor ="green";
+				 }
+				 if(t4 < 1)
+				 {
+				 	wynik_block_4.style.backgroundColor ="red";
+				 }
+				 if(t4 >= 1 && t4 < 4)
+				 {
+				 	wynik_block_4.style.backgroundColor ="yellow";
+				 }
+				 if(t4 >= 4)
+				 {
+				 	wynik_block_4.style.backgroundColor ="green";
+				 }
+				 if(t5 < 1)
+				 {
+				 	wynik_block_5.style.backgroundColor ="red";
+				 }
+				 if(t5 >= 1 && t5 < 4)
+				 {
+				 	wynik_block_5.style.backgroundColor ="yellow";
+				 }
+				 if(t5 >= 4)
+				 {
+				 	wynik_block_5.style.backgroundColor ="green";
+				 }
+				 if(t6 < 1)
+				 {
+				 	wynik_block_6.style.backgroundColor ="red";
+				 }
+				 if(t6 >= 1 && t6 < 4)
+				 {
+				 	wynik_block_6.style.backgroundColor ="yellow";
+				 }
+				 if(t6 >= 4)
+				 {
+				 	wynik_block_6.style.backgroundColor ="green";
+				 }
+				 if(t7 < 1)
+				 {
+				 	wynik_block_7.style.backgroundColor ="red";
+				 }
+				 if(t7 >= 1 && t7 < 4)
+				 {
+				 	wynik_block_7.style.backgroundColor ="yellow";
+				 }
+				 if(t7 >= 4)
+				 {
+				 	wynik_block_7.style.backgroundColor ="green";
+				 }
+				 if(t8 < 1)
+				 {
+				 	wynik_block_8.style.backgroundColor ="red";
+				 }
+				 if(t8 >= 1 && t8 < 4)
+				 {
+				 	wynik_block_8.style.backgroundColor ="yellow";
+				 }
+				 if(t8 >= 4)
+				 {
+				 	wynik_block_8.style.backgroundColor ="green";
+				 }
+				 if(t9 < 1)
+				 {
+				 	wynik_block_9.style.backgroundColor ="red";
+				 }
+				 if(t9 >= 1 && t9 < 4)
+				 {
+				 	wynik_block_9.style.backgroundColor ="yellow";
+				 }
+				 if(t9 >= 4)
+				 {
+				 	wynik_block_9.style.backgroundColor ="green";
+				 }
+				 if(t10 < 1)
+				 {
+				 	wynik_block_10.style.backgroundColor ="red";
+				 }
+				 if(t10 >= 1 && t10 < 4)
+				 {
+				 	wynik_block_10.style.backgroundColor ="yellow";
+				 }
+				 if(t10 >= 4)
+				 {
+				 	wynik_block_10.style.backgroundColor ="green";
+				 }
+				 if(t11 < 1)
+				 {
+				 	wynik_block_11.style.backgroundColor ="red";
+				 }
+				 if(t11 >= 1 && t11 < 4)
+				 {
+				 	wynik_block_11.style.backgroundColor ="yellow";
+				 }
+				 if(t11 >= 4)
+				 {
+				 	wynik_block_11.style.backgroundColor ="green";
+				 }
+				 if(t12 < 1)
+				 {
+				 	wynik_block_12.style.backgroundColor ="red";
+				 }
+				 if(t12 >= 1 && t12 < 4)
+				 {
+				 	wynik_block_12.style.backgroundColor ="yellow";
+				 }
+				 if(t12 >= 4)
+				 {
+				 	wynik_block_12.style.backgroundColor ="green";
+				 }
+				 if(t13 < 1)
+				 {
+				 	wynik_block_13.style.backgroundColor ="red";
+				 }
+				 if(t13 >= 1 && t13 < 4)
+				 {
+				 	wynik_block_13.style.backgroundColor ="yellow";
+				 }
+				 if(t13 >= 4)
+				 {
+				 	wynik_block_13.style.backgroundColor ="green";
+				 }
+				 if(t14 < 1)
+				 {
+				 	wynik_block_14.style.backgroundColor ="red";
+				 }
+				 if(t14 >= 1 && t14 < 4)
+				 {
+				 	wynik_block_14.style.backgroundColor ="yellow";
+				 }
+				 if(t14 >= 4)
+				 {
+				 	wynik_block_14.style.backgroundColor ="green";
+				 }
+				 if(t15 < 1)
+				 {
+				 	wynik_block_15.style.backgroundColor ="red";
+				 }
+				 if(t15 >= 1 && t15 < 4)
+				 {
+				 	wynik_block_15.style.backgroundColor ="yellow";
+				 }
+				 if(t15 >= 4)
+				 {
+				 	wynik_block_15.style.backgroundColor ="green";
+				 }
+
+				w = Math.floor(((t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10 + t11 + t12 + t13 + t14 + t15) * 100) / 75);
+
+				var elem = doc.createElement('h1');
+				elem.style.color ="white";
+				elem.style.fontSize ="5.0em";
+				var content = doc.createTextNode(w + '%');
+				var wrap = doc.getElementById('wrapped');
+
+				elem.appendChild(content);
+				wrap.parentNode.appendChild(elem);
+			}
+		}
+		but_back.onclick = function()
+		{
+			n--;
+			if (n==13)
+			{
+				question_14.style.display ="block";
+				question_15.style.display ="none";
+				block_14.style.display ="block";
+				block_15.style.display ="none";
+				wynik_block_14.style.display ="none";
+			}
+			if (n==12)
+			{
+				question_13.style.display ="block";
+				question_14.style.display ="none";
+				block_13.style.display ="block";
+				block_14.style.display ="none";
+				wynik_block_13.style.display ="none";
+			}
+			if (n==11)
+			{
+				question_12.style.display ="block";
+				question_13.style.display ="none";
+				block_12.style.display ="block";
+				block_13.style.display ="none";
+				wynik_block_12.style.display ="none";
+			}
+			if (n==10)
+			{
+				question_11.style.display ="block";
+				question_12.style.display ="none";
+				block_11.style.display ="block";
+				block_12.style.display ="none";
+				wynik_block_11.style.display ="none";
+			}
+			if (n==9)
+			{
+				question_10.style.display ="block";
+				question_11.style.display ="none";
+				block_10.style.display ="block";
+				block_11.style.display ="none";
+				wynik_block_10.style.display ="none";
+			}
+			if (n==8)
+			{
+				question_9.style.display ="block";
+				question_10.style.display ="none";
+				block_9.style.display ="block";
+				block_10.style.display ="none";
+				wynik_block_9.style.display ="none";
+			}
+			if (n==7)
+			{
+				question_8.style.display ="block";
+				question_9.style.display ="none";
+				block_8.style.display ="block";
+				block_9.style.display ="none";
+				wynik_block_8.style.display ="none";
+			}
+			if (n==6)
+			{
+				question_7.style.display ="block";
+				question_8.style.display ="none";
+				block_7.style.display ="block";
+				block_8.style.display ="none";
+				wynik_block_7.style.display ="none";
+			}
+			if (n==5)
+			{
+				question_6.style.display ="block";
+				question_7.style.display ="none";
+				block_6.style.display ="block";
+				block_7.style.display ="none";
+				wynik_block_6.style.display ="none";
+			}
+			if (n==4)
+			{
+				question_5.style.display ="block";
+				question_6.style.display ="none";
+				block_5.style.display ="block";
+				block_6.style.display ="none";
+				wynik_block_5.style.display ="none";
+			}
+			if (n==3)
+			{
+				question_4.style.display ="block";
+				question_5.style.display ="none";
+				block_4.style.display ="block";
+				block_5.style.display ="none";
+				wynik_block_4.style.display ="none";
+			}
+			if (n==2)
+			{
+				question_3.style.display ="block";
+				question_4.style.display ="none";
+				block_3.style.display ="block";
+				block_4.style.display ="none";
+				wynik_block_3.style.display ="none";
+			}
+			if (n==1)
+			{
+				question_2.style.display ="block";
+				question_3.style.display ="none";
+				block_2.style.display ="block";
+				block_3.style.display ="none";
+				wynik_block_2.style.display ="none";
+			}
+			if (n==0)
+			{
+				question_1.style.display ="block";
+				question_2.style.display ="none";
+				block_1.style.display ="block";
+				block_2.style.display ="none";
+				wynik_block_1.style.display ="none";
+			}
+		}
+
+		// block scriptów dla "but_1_1"-->"but_1-4"
+
+		but_1_1.onclick = function()
+		{
+			but_1_1.style.backgroundColor = "rgb(117, 124, 33)";
+			but_1_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t1 = 0;
+		}
+		but_1_2.onclick = function()
+		{
+			but_1_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_2.style.backgroundColor = "rgb(117, 124, 33)";
+			but_1_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t1 = 5;
+		}
+		but_1_3.onclick = function()
+		{
+			but_1_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_3.style.backgroundColor = "rgb(117, 124, 33)";
+			but_1_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t1 = 3;
+		}
+		but_1_4.onclick = function()
+		{
+			but_1_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_1_4.style.backgroundColor = "rgb(117, 124, 33)";
+			t1 = 5;
+		}
+
+		// to jest block scriptów dla "but_2_1"-->"but_2_4"
+
+		but_2_1.onclick = function()
+		{
+			but_2_1.style.backgroundColor = "rgb(117, 124, 33)";
+			but_2_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t2 = 5;
+		}
+		but_2_2.onclick = function()
+		{
+			but_2_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_2.style.backgroundColor = "rgb(117, 124, 33)";
+			but_2_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t2 = 3;
+		}
+		but_2_3.onclick = function()
+		{
+			but_2_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_3.style.backgroundColor = "rgb(117, 124, 33)";
+			but_2_4.style.backgroundColor = "rgb(255, 254, 209)";
+			t2 = 0;
+		}
+		but_2_4.onclick = function()
+		{
+			but_2_1.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_2.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_3.style.backgroundColor = "rgb(255, 254, 209)";
+			but_2_4.style.backgroundColor = "rgb(117, 124, 33)";
+			t2 = 0;
+		}
+
+		// to jest block scriptów dla "but_3_1"-->"but_3_4"
+
+		but_3_1.onclick = function()
+		{
+			but_3_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_3_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t3 = 5;
+		}
+		but_3_2.onclick = function()
+		{
+			but_3_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_3_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t3 = 3;
+		}
+		but_3_3.onclick = function()
+		{
+			but_3_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_3_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t3 = 1;
+		}
+		but_3_4.onclick = function()
+		{
+			but_3_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_3_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t4 = 0;
+		}
+
+		// to jest block scriptów dla "but_4_1"-->"but_4_4"
+
+		but_4_1.onclick = function()
+		{
+			but_4_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_4_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t4 = 5;
+		}
+		but_4_2.onclick = function()
+		{
+			but_4_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_4_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t4 = 3;
+		}
+		but_4_3.onclick = function()
+		{
+			but_4_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_4_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t4 = 1;
+		}
+		but_4_4.onclick = function()
+		{
+			but_4_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_4_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t4 = 0;
+		}
+
+		// to jest block scriptów dla "but_5_1"-->"but_5_4"
+		
+		but_5_1.onclick = function()
+		{
+			but_5_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_5_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t5 = 0;
+		}	
+		but_5_2.onclick = function()
+		{
+			but_5_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_5_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t5 = 0;
+		}
+		but_5_3.onclick = function()
+		{
+			but_5_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_5_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t5 = 0;
+		}
+		but_5_4.onclick = function()
+		{
+			but_5_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_5_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t5 = 5;
+		}
+		but_6_1.onclick = function()
+		{
+			but_6_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_6_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t6 = 0;
+		}
+		but_6_2.onclick = function()
+		{
+			but_6_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_6_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t6 = 1;
+		}
+		but_6_3.onclick = function()
+		{
+			but_6_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_6_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t6 = 3;
+		}
+		but_6_4.onclick = function()
+		{
+			but_6_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_6_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t6 = 5;
+		}
+		but_7_1.onclick = function()
+		{
+			but_7_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_7_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t7 = 1;
+		}
+		but_7_2.onclick = function()
+		{
+			but_7_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_7_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t7 = 3;
+		}
+		but_7_3.onclick = function()
+		{
+			but_7_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_7_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t7 = 5; 
+		}
+		but_7_4.onclick = function()
+		{
+			but_7_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_7_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t7 = 0;
+		}
+		but_8_1.onclick = function()
+		{
+			but_8_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_8_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t8 = 5;
+		}
+		but_8_2.onclick = function()
+		{
+			but_8_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_8_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t8 = 4;
+		}
+		but_8_3.onclick = function()
+		{
+			but_8_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_8_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t8 = 2;
+		}
+		but_8_4.onclick = function()
+		{
+			but_8_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_8_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t8 = 1;
+		}
+		but_9_1.onclick = function()
+		{
+			but_9_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_9_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t9 = 0;
+		}
+		but_9_2.onclick = function()
+		{
+			but_9_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_9_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t9 = 5;
+		}
+		but_9_3.onclick = function()
+		{
+			but_9_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_9_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t9 = 5;
+		}
+		but_9_4.onclick = function()
+		{
+			but_9_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_9_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t9 = 3;
+		}
+		but_10_1.onclick = function()
+		{
+			but_10_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_10_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t10 = 0;
+		}
+		but_10_2.onclick = function()
+		{
+			but_10_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_10_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t10 = 0;
+		}
+		but_10_3.onclick = function()
+		{
+			but_10_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_10_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t10 = 3;
+		}
+		but_10_4.onclick = function()
+		{
+			but_10_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_10_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t10 = 5;
+		}
+		but_11_1.onclick = function()
+		{
+			but_11_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_11_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t11 = 0;
+		}
+		but_11_2.onclick = function()
+		{
+			but_11_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_11_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t11 = 0;
+		}
+		but_11_3.onclick = function()
+		{
+			but_11_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_11_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t11 = 3;
+		}
+		but_11_4.onclick = function()
+		{
+			but_11_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_11_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t11 = 5;
+		}
+		but_12_1.onclick = function()
+		{
+			but_12_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_12_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t12 = 0;
+		}
+		but_12_2.onclick = function()
+		{
+			but_12_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_12_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t12 = 1;
+		}
+		but_12_3.onclick = function()
+		{
+			but_12_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_12_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t12 = 3;
+		}
+		but_12_4.onclick = function()
+		{
+			but_12_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_12_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t12 = 5;
+		}
+		but_13_1.onclick = function()
+		{
+			but_13_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_13_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t13 = 5;
+		}
+		but_13_2.onclick = function()
+		{
+			but_13_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_13_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t13 = 3;
+		}
+		but_13_3.onclick = function()
+		{
+			but_13_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_13_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t13 = 1;
+		}
+		but_13_4.onclick = function()
+		{
+			but_13_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_13_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t13 = 0;
+		}
+		but_14_1.onclick = function()
+		{
+			but_14_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_14_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t14 = 5;
+		}
+		but_14_2.onclick = function()
+		{
+			but_14_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_14_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t14 = 0;
+		}
+		but_14_3.onclick = function()
+		{
+			but_14_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_14_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t14 = 5;
+		}
+		but_14_4.onclick = function()
+		{
+			but_14_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_14_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t14 = 5;
+		}
+		but_15_1.onclick = function()
+		{
+			but_15_1.style.backgroundColor ="rgb(117, 124, 33)";
+			but_15_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t15 = 5;
+		}
+		but_15_2.onclick = function()
+		{
+			but_15_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_2.style.backgroundColor ="rgb(117, 124, 33)";
+			but_15_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t15 = 2;
+		}
+		but_15_3.onclick = function()
+		{
+			but_15_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_3.style.backgroundColor ="rgb(117, 124, 33)";
+			but_15_4.style.backgroundColor ="rgb(255, 254, 209)";
+			t15 = 5;
+		}
+		but_15_4.onclick = function()
+		{
+			but_15_1.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_2.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_3.style.backgroundColor ="rgb(255, 254, 209)";
+			but_15_4.style.backgroundColor ="rgb(117, 124, 33)";
+			t15 = 0;
+		}
+	</script>
+</html>
